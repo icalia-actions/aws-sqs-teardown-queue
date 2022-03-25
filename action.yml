@@ -1,0 +1,17 @@
+name: AWS SQS Teardown Queue
+description: Provide a description here
+
+author: Icalia Labs
+
+branding:
+  icon: activity
+  color: red
+
+inputs:
+  queue-name:
+    required: true
+    description: The name of the new queue.
+
+runs:
+  using: node16
+  main: dist/index.js
